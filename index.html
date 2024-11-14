@@ -1,0 +1,541 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="M.K MUTHU MALAR VANIGAM - Fresh Flowers">
+    <title>M.K MUTHU MALAR VANIGAM</title>
+
+    <style>
+        /* General page styles */
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f9f9f9; /* Light background color */
+            color: #333;
+        }
+
+        h1, h2,h3,h4,h5,h7,h8,h9 p {
+            margin: 0;
+            padding: 0;
+        }
+
+        a {
+            text-decoration: none;
+            color: inherit; /* Links inherit the text color */
+        }
+
+        /* Header Section */
+        header {
+            background-color: #4CAF50; /* Fresh green for flower theme */
+            color: white;
+            text-align: center;
+            padding: 30px;
+            border-bottom: 5px solid #388E3C; /* Darker green border for distinction */
+        }
+
+        header h1 {
+            font-size: 3em;
+            margin-bottom: 10px;
+        }
+
+        header p {
+            font-size: 1.2em;
+        }
+
+        /* Main Content Section */
+        main {
+            padding: 40px 20px;
+            text-align: center;
+            background-color: #fff; /* White background for content area */
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Slight shadow for depth */
+            margin-top: -30px; /* Overlap effect */
+            border-radius: 8px; /* Rounded corners */
+        }
+
+        /* Flower Section */
+        .flower {
+            display: inline-block;
+            width: 250px;
+            margin: 20px;
+            background-color: #fff;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+            text-align: center;
+            padding: 10px;
+            transition: all 0.3s ease;
+        }
+
+        .flower:hover {
+            transform: scale(1.05);
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+        }
+
+        .flower img {
+            width: 100%; 
+            height: 300px; 
+            object-fit: cover;
+            border-radius: 8px;
+        }
+        
+
+        .flower h3 {
+            color: #4CAF50;
+            font-size: 1.5em;
+            margin: 10px 0;
+        }
+
+        .flower p {
+            font-size: 1.2em;
+            color: #333;
+
+        }
+        .flower h4 {
+            color: #4CAF50;
+            font-size: 1.5em;
+            margin: 10px 0;
+        }
+        .flower p {
+            font-size: 1.2em;
+            color: #333;
+
+        }
+        .flower h5 {
+         color: #4CAF50;
+         font-size: 1.5em;
+         margin: 10px 0;
+        }
+        .flower p {
+            font-size: 1.2em;
+            color: #333;
+
+        }
+        .flower h6 {
+            color: #4CAF50;
+            font-size: 1.5em;
+            margin: 10px 0;
+        }
+        .flower p {
+            font-size: 1.2em;
+            color: #333;
+   
+        }
+        .flower h7 {
+            color: #4CAF50;
+            font-size: 1.5em;
+            margin: 10px 0;
+        }
+        .flower p {
+            font-size: 1.2em;
+            color: #333;
+   
+        }
+        .flower h8 {
+            color: #4CAF50;
+            font-size: 1.5em;
+            margin: 10px 0;
+        }
+        .flower p {
+            font-size: 1.2em;
+            color: #333;
+   
+        }
+        .flower h9 {
+            color: #4CAF50;
+            font-size: 1.5em;
+            margin: 10px 0;
+        }
+        .flower p {
+            font-size: 1.2em;
+            color: #333;
+   
+        }
+
+        .flower .price {
+            font-size: 1.5em;
+            font-weight: bold;
+            color: #e91e63;
+            margin-top: 10px;
+        }
+
+        /* Contact Info Section */
+        #contact-info {
+            background-color: #e9f5e9; /* Light green background for the contact info */
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            margin-top: 20px;
+            text-align: left;
+            max-width: 600px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        #contact-info h3 {
+            font-size: 2em;
+            color: #4CAF50;
+            margin-bottom: 15px;
+        }
+        #contact-info p {
+            font-size: 1.1em;
+            line-height: 1.6;
+            margin-bottom: 10px;
+        }
+
+        #contact-info h4 {
+            font-size: 2em;
+            color: #4CAF50;
+            margin-bottom: 15px;
+        }
+        #contact-info p {
+            font-size: 1.1em;
+            line-height: 1.6;
+            margin-bottom: 10px;
+        }
+
+        #contact-info h5 {
+            font-size: 2em;
+            color: #4CAF50;
+            margin-bottom: 15px;
+        }
+        #contact-info p {
+            font-size: 1.1em;
+            line-height: 1.6;
+            margin-bottom: 10px;
+        }
+        
+        #contact-info h6 {
+            font-size: 2em;
+            color: #4CAF50;
+            margin-bottom: 15px;
+        }
+        #contact-info p {
+            font-size: 1.1em;
+            line-height: 1.6;
+            margin-bottom: 10px;
+        }
+        #contact-info h7 {
+            font-size: 2em;
+            color: #4CAF50;
+            margin-bottom: 15px;
+        }
+        #contact-info p {
+            font-size: 1.1em;
+            line-height: 1.6;
+            margin-bottom: 10px;
+        }
+        #contact-info h8 {
+            font-size: 2em;
+            color: #4CAF50;
+            margin-bottom: 15px;
+        }
+        #contact-info p {
+            font-size: 1.1em;
+            line-height: 1.6;
+            margin-bottom: 10px;
+        }
+        #contact-info h9 {
+            font-size: 2em;
+            color: #4CAF50;
+            margin-bottom: 15px;
+        }
+        #contact-info p {
+            font-size: 1.1em;
+            line-height: 1.6;
+            margin-bottom: 10px;
+        }
+
+        /* Phone Number Styling */
+        #contact-info a {
+            color: #4CAF50; /* Green color for the phone link */
+            font-weight: bold;
+        }
+
+        #contact-info a:hover {
+            color: #388E3C; /* Darker green when hovering */
+            text-decoration: underline;
+        }
+
+        /* Footer Section */
+        footer {
+            background-color: #439939;
+            color: white;
+            text-align: center;
+            padding: 8px;
+            position: fixed;
+            width: 100%;
+            bottom: 0;
+        }
+
+        footer p {
+            font-size: 1em;
+        }
+
+        /* Booking Form Styles */
+        #booking-form {
+            margin-top: 30px;
+            padding: 20px;
+            background-color: #f1f1f1;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            max-width: 600px;
+            margin-left: auto;
+            margin-right: auto;
+            text-align: left;
+        }
+
+        #booking-form h3 {
+            font-size: 2em;
+            color: #4CAF50;
+            margin-bottom: 15px;
+        }
+
+        #booking-form label {
+            font-size: 1.1em;
+            display: block;
+            margin-bottom: 5px;
+        }
+
+        #booking-form input, 
+        #booking-form select, 
+        #booking-form button {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 20px;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+        }
+
+        #booking-form button {
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+
+        #booking-form button:hover {
+            background-color: #388E3C;
+        }
+
+        /* Responsive Design for Small Screens */
+        @media (max-width: 768px) {
+            header h1 {
+                font-size: 2.5em;
+            }
+
+            header p {
+                font-size: 1em;
+            }
+
+            main h2 {
+                font-size: 2em;
+            }
+
+            main p {
+                font-size: 1em;
+            }
+
+            .flower {
+                width: 200px;
+            }
+
+            #contact-info {
+                padding: 15px;
+                max-width: 90%;
+            }
+
+            #contact-info h3 {
+                font-size: 1.8em;
+            }
+
+            #contact-info p {
+                font-size: 1em;
+            }
+            #contact-info h4 {
+                font-size: 1.8em;
+            }
+            #contact-info p {
+                font-size: 1em;
+            }
+            #contact-info h5 {
+                font-size: 1.8em;
+            }
+            #contact-info p {
+                font-size: 1em;
+            }
+            #contact-info h6 {
+                font-size: 1.8em;
+            }
+            #contact-info p {
+                font-size: 1em;
+            }
+            #contact-info h7 {
+                font-size: 1.8em;
+            }
+            #contact-info p {
+                font-size: 1em;
+            }
+            #contact-info h8 {
+                font-size: 1.8em;
+            }
+            #contact-info p {
+                font-size: 1em;
+            }
+            #contact-info h9 {
+                font-size: 1.8em;
+            }
+            #contact-info p {
+                font-size: 1em;
+            }
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>M.K MUTHU MALAR VANIGAM</h1>
+    <p>Fresh Flowers,currency garland,vetiver garland,Ealakai garland</p>
+</header>
+
+<main>
+    <h2>Our Floral Arrangements</h2>
+    <p>Explore our beautiful flower arrangements, perfect for any occasion.</p>
+
+    <!-- Flower Product Section -->
+    <div class="flower">
+        <!-- Set image source to the path where your image is stored -->
+        <img src="C:\Users\sivaraman_lovely\OneDrive\Pictures\WhatsApp Image 2024-11-07 at 19.48.41_e8d66a4a.jpg" alt="Flower Arrangement">
+        <h3>rose petals</h3>
+        <p>rose with  Nanthiyavattai wedding garlands(malai)...</p>
+        <p class="price">₹6500</p>
+    </div>
+    <div class="flower">
+        <!-- Set image source to the path where your image is stored -->
+        <img src="C:\Users\sivaraman_lovely\OneDrive\Pictures\WhatsApp Image 2024-11-08 at 23.00.51_b355487e.jpg" alt="Flower Arrangement">
+        <h4>rose petals</h4>
+        <p>jyothika malai wedding garlands(malai)...</p>
+        <p class="price">₹6000</p>
+    </div>
+    <div class="flower">
+
+        <img src="C:\Users\sivaraman_lovely\OneDrive\Pictures\WhatsApp Image 2024-11-08 at 23.26.44_7d940902.jpg" alt="Flower Arrangement">
+        <h5>lotus garland(malai)</h5>
+        <p>white lotus wedding garland(malai)...</p>
+        <p class="price">₹6500</p>
+    </div>
+    <div class="flower">
+
+        <img src="C:\Users\sivaraman_lovely\OneDrive\Pictures\WhatsApp Image 2024-11-08 at 23.26.44_62afa398.jpg" alt="Flower Arrangement">
+        <h6>lotus garland(malai)</h6>
+        <p>white lotus with Nanthiyavattai garland(malai)...</p>
+        <p class="price">₹6500</p>
+    </div>
+    <div class="flower">
+
+        <img src="C:\Users\sivaraman_lovely\OneDrive\Pictures\WhatsApp Image 2024-11-08 at 23.26.45_0cc27c27.jpg" alt="Flower Arrangement">
+        <h7>rose petals</h7>
+        <p>rose with Nanthiyavattai garland(malai)...</p>
+        <p class="price">₹6000</p>
+    </div>
+    <div class="flower">
+
+        <img src="C:\Users\sivaraman_lovely\OneDrive\Pictures\WhatsApp Image 2024-11-08 at 23.26.45_fda507ba.jpg" alt="Flower Arrangement">
+        <h8>nuts(munthiri)</h8>
+        <p>nuts(munthiri) garland(malai)...</p>
+        <p class="price">₹6000</p>
+    </div>
+    <div class="flower"> 
+
+        <img src="C:\Users\sivaraman_lovely\OneDrive\Pictures\WhatsApp Image 2024-11-09 at 00.25.33_42e25206.jpg"alt="Flower Arrangement">
+        <h9>Chololate(3 feet)</h9>
+        <p>chololate garland(malai)...</p>
+        <p class="price">₹1000</p>
+    </div>
+
+
+
+  
+<!-- Booking Form -->
+<div id="booking-form">
+    <h3>Online Order</h3>
+    <form id="bookForm" onsubmit="sendWhatsApp(event)">
+        <label for="flowerType">Select Flower:</label>
+        <select id="flowerType" name="flowerType" required>
+            <option value="rose with  Nanthiyavattai wedding garlands(malai) model(1)">rose with  Nanthiyavattai wedding garlands(malai) model(1)</option>
+            <option value="jyothika malai wedding garlands(malai)">jyothika malai wedding garlands(malai)</option>
+            <option value="white lotus wedding garland(malai)...">white lotus wedding garland(malai)...</option>
+            <option value="white lotus with Nanthiyavattai garland(malai)">white lotus with Nanthiyavattai garland(malai)</option>
+            <option value="rose with Nanthiyavattai garland(malai)...">rose with Nanthiyavattai garland(malai)...</option>
+            <option value="nuts(munthiri) garland(malai)...">nuts(munthiri) garland(malai)...</option>
+            <option value="Chololate(3 feet)">Chololate(3 feet)</option>
+        </select>
+
+        <label for="garland">Number of Garland:</label>
+        <input type="number" id="garland" name="garland" min="1" required>
+
+        <label for="name">Your Name:</label>
+        <input type="text" id="name" name="name" required>
+
+        <label for="email">Email Address:</label>
+        <input type="email" id="email" name="email" required>
+
+        <label for="delivery">Delivery Date (optional):</label>
+        <textarea id="delivery" name="delivery" rows="1"></textarea>
+
+        <button type="submit">Order Now</button>
+    </form>
+</div>
+
+    <!-- Contact Information Section -->
+    <div id="contact-info">
+        <h3>Our Contact Information</h3>
+        
+        <!-- WhatsApp number section -->
+        <p><strong>WhatsApp Number:</strong> <a href="https://wa.me/919342913781" target="_blank">+91 93429 13781</a></p>
+       
+        <!-- number section -->
+        <p><strong>call Number:</strong> <a href="https://wa.me/918760246394" target="_blank">+91 8760246394</a></p>
+
+        <!-- Location Section -->
+        <p><strong>Location:</strong> 127, MDR130, Jayankondam, Tamil Nadu 621802</p>
+        
+        <!-- Link to Google Maps location -->
+        <p><a href="https://www.google.com/maps?q=127,+MDR130,+Jayankondam,+Tamil+Nadu+621802" target="_blank">View Location on Google Maps</a></p>
+    </div>
+</main>
+
+<footer>
+    <p>&copy; M.K MUTHU MALAR VANIGAM</p>
+</footer>
+
+<script>
+    function sendWhatsApp(event) {
+        event.preventDefault(); // Prevent default form submission
+
+        // Get the form data
+        var flowerType = document.getElementById('flowerType').value;
+        var garland = document.getElementById('garland').value;
+        var name = document.getElementById('name').value;
+        var email = document.getElementById('email').value;
+        var delivery = document.getElementById('delivery').value;
+
+        // Construct the WhatsApp message
+        var messageBody = encodeURIComponent(
+            "Hello, I would like to place an order for the following:\n\n" +
+            "Flower Type: " + flowerType + "\n" +
+            "Number of Garlands: " + garland + "\n" +
+            "Customer Name: " + name + "\n" +
+            "Email Address: " + email + "\n" +
+            (delivery ? "Delivery Date: " + delivery + "\n" : "")
+        );
+
+        // Redirect to WhatsApp with the message
+        var whatsappURL = "https://wa.me/919342913781?text=" + messageBody;
+        window.location.href = whatsappURL;
+    }
+</script>
+
+
+</body>
+</html>
